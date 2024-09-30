@@ -1,0 +1,9 @@
+body {
+    background-color: black;
+}
+
+.VisualComponent{
+    border-width: 2vmin;
+    border-style: groove;
+    border-color: lightblue;
+}

@@ -1,0 +1,20 @@
+.Checkers {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.Checkers > div{
+    height: 100%;
+}
+
+.Checkers > div:nth-child(1), .Checkers > div:nth-child(3){
+    width: 20%;
+}
+.Checkers > div:nth-child(2){
+    width: 60%;
+}
