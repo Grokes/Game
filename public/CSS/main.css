@@ -3,7 +3,6 @@ body {
 }
 
 .VisualComponent{
-    border-width: 2vmin;
-    border-style: groove;
-    border-color: lightblue;
+    background-color: gray;
+    border-radius: 50%;
 }

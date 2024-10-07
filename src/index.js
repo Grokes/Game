@@ -8,7 +8,7 @@ import Loader from "./Loader";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Loader />
+    <Checkers />
   </React.StrictMode>
 );
 

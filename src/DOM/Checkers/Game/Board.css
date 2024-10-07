@@ -1,0 +1,18 @@
+#Board{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+#Board>.Cell{
+    z-index: -1;
+}
+#Board>.Cell:nth-child(odd of .FirstRow),
+#Board>.Cell:nth-child(even of .SecondRow){
+    background-color: white;
+}
+
+#Board>.Cell:nth-child(even of .FirstRow),
+#Board>.Cell:nth-child(odd of .SecondRow){
+    background-color: black;
+}
