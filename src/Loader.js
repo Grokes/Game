@@ -32,6 +32,10 @@ function Loader(){
                     path="/rules"
                     element={<Rules/>}
                 />
+                <Route
+                    path="*"
+                    element=<Navigate to="/login" />
+                />
 
             </Routes>
         </Router>
