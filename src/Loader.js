@@ -6,6 +6,7 @@ import LoginForm from "./DOM/Login/LoginForm";
 import GameModel from "./GameModel/GameModel";
 import About from "./DOM/About";
 import Rules from "./DOM/Rules";
+import Header from "./DOM/Header/Header";
 
 const gameModel = new GameModel();
 
@@ -13,6 +14,7 @@ function Loader(){
     const [isAuthenticated, setIsAuthenticated] = useState(false);
     return (
         <Router>
+            <Header />
             <Routes>
                 <Route
                     path="/login"

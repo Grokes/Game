@@ -1,5 +1,4 @@
-//import "./Login.css"
-
+import "./Login.css"
 import {useState} from "react";
 import { useNavigate } from 'react-router-dom';
 
@@ -33,8 +32,6 @@ function LoginForm({ setIsAuthenticated }){
 
     function handleSubmit(event){
         event.preventDefault();
-        console.log('Данные формы', formData)
-        console.log('Данные бд', users[0])
 
         if (validate())
         {

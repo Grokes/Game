@@ -8,3 +8,9 @@ li>a{
 h1{
     color:white;
 }
+
+.Header ul{
+    background-color: black;
+    opacity: 0.2;
+    margin: 0;
+}

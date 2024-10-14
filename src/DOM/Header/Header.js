@@ -1,23 +1,23 @@
 import './Header.css'
+import {useNavigate} from "react-router-dom";
 
 function Header() {
+    const navigate = useNavigate();
     return <div className={"Header"}>
         <ul>
             <li className={"Header_Login"}>
-                <a href="/login">Login</a>
+                <button onClick={() => {navigate("/login")}}>Login</button>
             </li>
             <li className={"Header_Game"}>
-                <a href="/checkers">Game</a>
+                <button onClick={() => {navigate("/checkers")}}>Game</button>
             </li>
             <li className={"Header_About"}>
-                <a href="/about">About</a>
+                <button onClick={() => {navigate("/about")}}>About</button>
             </li>
             <li className={"Header_Rules"}>
-                <a href="/rules">Rules</a>
+                <button onClick={() => {navigate("/rules")}}>Rules</button>
             </li>
         </ul>
-
-
     </div>
 }
 
