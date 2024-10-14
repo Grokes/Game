@@ -4,6 +4,7 @@ import './index.css';
 import Checkers from "./DOM/Checkers";
 import reportWebVitals from './reportWebVitals';
 import Loader from "./Loader";
+import GameModel from "./GameModel/GameModel";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

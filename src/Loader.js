@@ -3,6 +3,9 @@ import React from "react";
 import {useState} from "react";
 import Checkers from "./DOM/Checkers";
 import LoginForm from "./DOM/Login/LoginForm";
+import GameModel from "./GameModel/GameModel";
+
+const gameModel = new GameModel();
 
 function Loader(){
     const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -15,7 +18,7 @@ function Loader(){
                 />
                 <Route
                     path="/checkers"
-                    element={isAuthenticated ? <Checkers /> : <Navigate to="/login" />}
+                    element={isAuthenticated ? <Checkers GameModel={gameModel}/> : <Navigate to="/login" />}
                 />
                 <Route
                     path="*"

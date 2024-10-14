@@ -7,12 +7,20 @@ function BackgroundCellGenerator() {
         for(let counterX = 1 ; counterX <= 8; counterX++) {
             if (counterY % 2 === 1) {
                 backgroundCells.push(
-                    <div className="Cell FirstRow" style={{gridRow: counterY, gridColumn: counterX}}></div>
+                    <div
+                        className="Cell FirstRow"
+                        style={{gridRow: counterY, gridColumn: counterX}}
+                        key={`boardCell_${counterY}_${counterX}`}>
+                    </div>
                 )
             }
             else{
                 backgroundCells.push(
-                    <div className="Cell SecondRow" style={{gridRow: counterY, gridColumn: counterX}}></div>
+                    <div
+                        className="Cell SecondRow"
+                        style={{gridRow: counterY, gridColumn: counterX}}
+                        key={`boardCell_${counterY}_${counterX}`}>
+                    </div>
                 )
             }
         }

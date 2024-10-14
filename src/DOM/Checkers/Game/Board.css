@@ -2,17 +2,27 @@
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
+    padding: 5px;
 }
 
 #Board>.Cell{
     z-index: -1;
 }
+#Board>div>img{
+    max-width: 69%;
+    max-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+
 #Board>.Cell:nth-child(odd of .FirstRow),
 #Board>.Cell:nth-child(even of .SecondRow){
-    background-color: white;
+    background-color: #D0D0D0;
 }
 
 #Board>.Cell:nth-child(even of .FirstRow),
 #Board>.Cell:nth-child(odd of .SecondRow){
-    background-color: black;
+    background-color: #2B2B2B;
 }

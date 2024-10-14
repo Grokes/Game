@@ -1,7 +1,6 @@
 //import "./Login.css"
 
 import {useState} from "react";
-import Checkers from "../Checkers";
 import { useNavigate } from 'react-router-dom';
 
 function LoginForm({ setIsAuthenticated }){
@@ -20,9 +19,9 @@ function LoginForm({ setIsAuthenticated }){
             password:"123456",
             email:"123@ya.ru"},
         {
-            username: "Alex",
+            username: "1234",
             password:"123456",
-            email:"321@ya.ru"}
+            email:"123@ya.ru"}
     ]
 
     function handleChange(event){

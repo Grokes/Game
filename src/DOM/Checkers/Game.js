@@ -3,10 +3,10 @@ import PlayerCemetry from "./Game/PlayerCemetry";
 import Board from "./Game/Board";
 import "./Game.css"
 
-function Game(){
+function Game({GameModel}){
     return <div className="Game" >
         <EnemyCemetry/>
-        <Board/>
+        <Board GameModel={GameModel}/>
         <PlayerCemetry/>
     </div>;
 }
