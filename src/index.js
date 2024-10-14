@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Checkers from "./DOM/Checkers";
 import reportWebVitals from './reportWebVitals';
 import Loader from "./Loader";
-import GameModel from "./GameModel/GameModel";
+import Header from "./DOM/Header/Header";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+      <Header />
     <Loader />
   </React.StrictMode>
 );

@@ -4,6 +4,8 @@ import {useState} from "react";
 import Checkers from "./DOM/Checkers";
 import LoginForm from "./DOM/Login/LoginForm";
 import GameModel from "./GameModel/GameModel";
+import About from "./DOM/About";
+import Rules from "./DOM/Rules";
 
 const gameModel = new GameModel();
 
@@ -21,9 +23,14 @@ function Loader(){
                     element={isAuthenticated ? <Checkers GameModel={gameModel}/> : <Navigate to="/login" />}
                 />
                 <Route
-                    path="*"
-                    element={<Navigate to="/login" />}
+                    path="/about"
+                    element={<About/>}
                 />
+                <Route
+                    path="/rules"
+                    element={<Rules/>}
+                />
+
             </Routes>
         </Router>
     );
